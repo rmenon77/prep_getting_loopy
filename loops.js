@@ -10,17 +10,68 @@ Within the _FOR_ loop, use `console.log` to:
 
 /***bonus:** could you take the code inside of this FOR loop and encapsulate it inside of a function called `printContent` and still achieve the same result? This new function should accept two parameters.*/
 
+var presidents = ["Washington", "Adams", "Jefferson", "Madison", "Monroe"]; 
+
+// 	for (var i=0; i<presidents.length; i++) {
+			
+// 		console.log(presidents[i]);
+// 		console.log("Value of i is: " + [i]);
+// 		console.log("The value of  " + i + " is " + presidents[i]);
+		
+// }
+
+function printContent(arr) {
+
+	for (var i =0; i<arr.length; i++) {
+		console.log(arr[i]);
+		console.log("Value of i is: " + [i]);
+		console.log("The value of  " + i + " is " + arr[i]);
+
+	}
 
 
+}
 
+printContent(presidents);
+
+/*var presidents = ["Washington", "Adams", "Jefferson", "Madison", "Monroe"];
+
+for(var i = 0; i<presidents.length; i++){
+  console.log(presidents[i]);
+  console.log("Value of i is: " + [i]);
+  console.log("Value at " + [i] + " is: " + presidents[i]);
+}
+
+
+function printContent(names){
+  for(var i = 0; i<names.length; i++){
+    console.log("Value of i is: " + [i]);
+    console.log("Value at " + [i] + " is: " + names[i]);
+  }
+  return names;
+}
+
+printContent(presidents);*/
+
+//**bonus:** could you take the code inside of this FOR loop and encapsulate it inside of a function called `printContent` and still achieve the same result? This new function should accept two parameters.
+
+ 
 
 /*Declare a variable named `stringOfNumbers` and set it's value to `''` (an empty String).*/
 
 /*Then write a _FOR_ loop that appends a Number value to that string starting from `10` all the way up to and including `20`.*/
 
 
-
 /***bonus:** could you take the code inside of this _FOR_ loop and encapsulate it inside of a function called `appendToString` and still achieve the same result?*/
+
+var stringOfNumbers = " ";
+	
+	for (var i = 10; 1<21; i++) {    //loop starts at 10 and goes to 20. there is no .length because the string is empty
+									// but the counter will stop at 21 b/c the loop says i<21; i++ increments by 1
+		
+		stringOfNumbers += [i];		//pointing back to the empty string and adding 
+	}
+
 
 
 
